@@ -1,0 +1,148 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+nav{
+    background-color: #030303;
+    color: #12aedd;
+    padding: 10px;
+    font-family: 'poppins', sans-serif;
+}
+
+.banner {
+    background-image: url("../image/Download.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #ff009d;
+    padding: 100px;
+    text-align: center;
+}
+
+.stroke-text {
+    color: #ff009d;
+    -webkit-text-stroke: 2px #030303;
+    text-shadow: 2px #030303;
+}
+
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a{
+    color: #30e7ff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+footer.icon {
+    color:black;
+    font-size: 24px;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+.description {
+    font-size: 16px;
+    color: #666;
+}
+  
+.about {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Gaya untuk handphone */
+@media (max-width: 767px){
+    /* Gaya khusus untuk tampilan handphone */
+    .banner{
+        padding: 60px;
+    }
+
+    .name{
+        font-size: 28px;
+    }
+
+    .description{
+        font-size: 16px;
+    }
+    .about{
+        font-size: 18px;
+    }
+}
+
+/* Gaya untuk desktop */
+@media (min-width: 1024px) {
+    .banner{
+        padding: 100px;
+    }
+
+    .name{
+        font-size: 36px;
+    }
+
+    .description{
+        font-size: 20px;
+    }
+
+    .about{
+        font-size: 24px;
+    }
+}
+
+/* Gaya untuk tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Gaya khusus untuk tampilan tablet */
+    .banner{
+        padding: 80px;
+    }
+
+    .name{
+        font-size: 32px;
+    }
+
+    .description{
+        font-size: 18px;
+    }
+
+    .about{
+        font-size: 20px;
+    }
+}

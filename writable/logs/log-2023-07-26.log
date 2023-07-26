@@ -1,0 +1,612 @@
+ERROR - 2023-07-26 00:01:58 --> mysqli_sql_exception: Unknown column 'tb_mahasiswa.id' in 'where clause' in C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tugas-web\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tugas-web\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tugas-web\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+#6 C:\xampp\htdocs\tugas-web\app\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+#7 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+#8 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+#9 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tugas-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\tugas-web\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-07-26 00:01:58 --> Unknown column 'tb_mahasiswa.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_mahasiswa`
+WHERE `tb_mahasiswa`.`id` = :tb_mahasiswa.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+ 4 APPPATH\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-07-26 00:02:09 --> mysqli_sql_exception: Unknown column 'tb_mahasiswa.id' in 'where clause' in C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tugas-web\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tugas-web\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tugas-web\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+#6 C:\xampp\htdocs\tugas-web\app\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+#7 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+#8 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+#9 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tugas-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\tugas-web\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-07-26 00:02:09 --> Unknown column 'tb_mahasiswa.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_mahasiswa`
+WHERE `tb_mahasiswa`.`id` = :tb_mahasiswa.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+ 4 APPPATH\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-07-26 00:03:49 --> mysqli_sql_exception: Unknown column 'tb_mahasiswa.id' in 'where clause' in C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tugas-web\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tugas-web\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tugas-web\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+#6 C:\xampp\htdocs\tugas-web\app\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+#7 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+#8 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+#9 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tugas-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\tugas-web\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-07-26 00:03:49 --> Unknown column 'tb_mahasiswa.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_mahasiswa`
+WHERE `tb_mahasiswa`.`id` = :tb_mahasiswa.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+ 4 APPPATH\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-07-26 00:10:10 --> mysqli_sql_exception: Unknown column 'tb_mahasiswa.id' in 'where clause' in C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tugas-web\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tugas-web\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tugas-web\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+#6 C:\xampp\htdocs\tugas-web\app\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+#7 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+#8 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+#9 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tugas-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\tugas-web\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-07-26 00:10:10 --> Unknown column 'tb_mahasiswa.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_mahasiswa`
+WHERE `tb_mahasiswa`.`id` = :tb_mahasiswa.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+ 4 APPPATH\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-07-26 00:10:22 --> mysqli_sql_exception: Unknown column 'tb_mahasiswa.id' in 'where clause' in C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tugas-web\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tugas-web\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tugas-web\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+#6 C:\xampp\htdocs\tugas-web\app\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+#7 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+#8 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+#9 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tugas-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\tugas-web\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-07-26 00:10:22 --> Unknown column 'tb_mahasiswa.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_mahasiswa`
+WHERE `tb_mahasiswa`.`id` = :tb_mahasiswa.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+ 4 APPPATH\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-07-26 00:11:31 --> mysqli_sql_exception: Unknown column 'tb_mahasiswa.id' in 'where clause' in C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tugas-web\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tugas-web\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tugas-web\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+#6 C:\xampp\htdocs\tugas-web\app\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+#7 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+#8 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+#9 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tugas-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\tugas-web\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-07-26 00:11:31 --> Unknown column 'tb_mahasiswa.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_mahasiswa`
+WHERE `tb_mahasiswa`.`id` = :tb_mahasiswa.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+ 4 APPPATH\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-07-26 00:11:50 --> mysqli_sql_exception: Unknown column 'tb_mahasiswa.id' in 'where clause' in C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tugas-web\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tugas-web\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tugas-web\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+#6 C:\xampp\htdocs\tugas-web\app\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+#7 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+#8 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+#9 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tugas-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\tugas-web\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-07-26 00:11:50 --> Unknown column 'tb_mahasiswa.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_mahasiswa`
+WHERE `tb_mahasiswa`.`id` = :tb_mahasiswa.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+ 4 APPPATH\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-07-26 00:12:53 --> mysqli_sql_exception: Unknown column 'tb_mahasiswa.id' in 'where clause' in C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tugas-web\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tugas-web\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tugas-web\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+#6 C:\xampp\htdocs\tugas-web\app\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+#7 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+#8 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+#9 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tugas-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\tugas-web\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-07-26 00:12:53 --> Unknown column 'tb_mahasiswa.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_mahasiswa`
+WHERE `tb_mahasiswa`.`id` = :tb_mahasiswa.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+ 4 APPPATH\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-07-26 00:14:00 --> mysqli_sql_exception: Unknown column 'tb_mahasiswa.id' in 'where clause' in C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tugas-web\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tugas-web\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tugas-web\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+#6 C:\xampp\htdocs\tugas-web\app\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+#7 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+#8 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+#9 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tugas-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\tugas-web\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-07-26 00:14:00 --> Unknown column 'tb_mahasiswa.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_mahasiswa`
+WHERE `tb_mahasiswa`.`id` = :tb_mahasiswa.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+ 4 APPPATH\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-07-26 00:14:21 --> mysqli_sql_exception: Unknown column 'tb_mahasiswa.id' in 'where clause' in C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tugas-web\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tugas-web\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tugas-web\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+#6 C:\xampp\htdocs\tugas-web\app\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+#7 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+#8 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+#9 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tugas-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\tugas-web\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-07-26 00:14:21 --> Unknown column 'tb_mahasiswa.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_mahasiswa`
+WHERE `tb_mahasiswa`.`id` = :tb_mahasiswa.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+ 4 APPPATH\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-07-26 00:24:54 --> mysqli_sql_exception: Unknown column 'tb_mahasiswa.id' in 'where clause' in C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tugas-web\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tugas-web\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tugas-web\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+#6 C:\xampp\htdocs\tugas-web\app\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+#7 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+#8 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+#9 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tugas-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\tugas-web\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-07-26 00:24:54 --> Unknown column 'tb_mahasiswa.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_mahasiswa`
+WHERE `tb_mahasiswa`.`id` = :tb_mahasiswa.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+ 4 APPPATH\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-07-26 00:26:39 --> mysqli_sql_exception: Unknown column 'tb_mahasiswa.id' in 'where clause' in C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tugas-web\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tugas-web\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tugas-web\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+#6 C:\xampp\htdocs\tugas-web\app\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+#7 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+#8 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+#9 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tugas-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\tugas-web\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-07-26 00:26:39 --> Unknown column 'tb_mahasiswa.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_mahasiswa`
+WHERE `tb_mahasiswa`.`id` = :tb_mahasiswa.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+ 4 APPPATH\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-07-26 00:29:18 --> mysqli_sql_exception: Unknown column 'tb_mahasiswa.id' in 'where clause' in C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tugas-web\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tugas-web\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tugas-web\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+#6 C:\xampp\htdocs\tugas-web\app\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+#7 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+#8 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+#9 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tugas-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\tugas-web\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-07-26 00:29:18 --> Unknown column 'tb_mahasiswa.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_mahasiswa`
+WHERE `tb_mahasiswa`.`id` = :tb_mahasiswa.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+ 4 APPPATH\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-07-26 00:31:17 --> mysqli_sql_exception: Unknown column 'tb_mahasiswa.id' in 'where clause' in C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tugas-web\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tugas-web\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tugas-web\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+#6 C:\xampp\htdocs\tugas-web\app\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+#7 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+#8 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+#9 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tugas-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\tugas-web\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-07-26 00:31:17 --> Unknown column 'tb_mahasiswa.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_mahasiswa`
+WHERE `tb_mahasiswa`.`id` = :tb_mahasiswa.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+ 4 APPPATH\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-07-26 00:31:21 --> mysqli_sql_exception: Unknown column 'tb_mahasiswa.id' in 'where clause' in C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tugas-web\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tugas-web\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tugas-web\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+#6 C:\xampp\htdocs\tugas-web\app\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+#7 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+#8 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+#9 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tugas-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\tugas-web\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-07-26 00:31:21 --> Unknown column 'tb_mahasiswa.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_mahasiswa`
+WHERE `tb_mahasiswa`.`id` = :tb_mahasiswa.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+ 4 APPPATH\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-07-26 00:33:47 --> mysqli_sql_exception: Unknown column 'tb_mahasiswa.id' in 'where clause' in C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tugas-web\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tugas-web\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tugas-web\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+#6 C:\xampp\htdocs\tugas-web\app\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+#7 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+#8 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+#9 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tugas-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\tugas-web\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-07-26 00:33:47 --> Unknown column 'tb_mahasiswa.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_mahasiswa`
+WHERE `tb_mahasiswa`.`id` = :tb_mahasiswa.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+ 4 APPPATH\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-07-26 00:33:51 --> mysqli_sql_exception: Unknown column 'tb_mahasiswa.id' in 'where clause' in C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tugas-web\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tugas-web\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tugas-web\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+#6 C:\xampp\htdocs\tugas-web\app\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+#7 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+#8 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+#9 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tugas-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\tugas-web\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-07-26 00:33:51 --> Unknown column 'tb_mahasiswa.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_mahasiswa`
+WHERE `tb_mahasiswa`.`id` = :tb_mahasiswa.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+ 4 APPPATH\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-07-26 00:37:07 --> mysqli_sql_exception: Unknown column 'tb_mahasiswa.id' in 'where clause' in C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tugas-web\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tugas-web\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tugas-web\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+#6 C:\xampp\htdocs\tugas-web\app\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+#7 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+#8 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+#9 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tugas-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\tugas-web\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-07-26 00:37:07 --> Unknown column 'tb_mahasiswa.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_mahasiswa`
+WHERE `tb_mahasiswa`.`id` = :tb_mahasiswa.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+ 4 APPPATH\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-07-26 00:41:02 --> mysqli_sql_exception: Unknown column 'tb_mahasiswa.id' in 'where clause' in C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tugas-web\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tugas-web\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tugas-web\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+#6 C:\xampp\htdocs\tugas-web\app\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+#7 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+#8 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+#9 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tugas-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\tugas-web\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-07-26 00:41:02 --> Unknown column 'tb_mahasiswa.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_mahasiswa`
+WHERE `tb_mahasiswa`.`id` = :tb_mahasiswa.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+ 4 APPPATH\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-07-26 00:41:02 --> mysqli_sql_exception: Unknown column 'tb_mahasiswa.id' in 'where clause' in C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tugas-web\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tugas-web\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tugas-web\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+#6 C:\xampp\htdocs\tugas-web\app\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+#7 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+#8 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+#9 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tugas-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\tugas-web\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-07-26 00:41:02 --> Unknown column 'tb_mahasiswa.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_mahasiswa`
+WHERE `tb_mahasiswa`.`id` = :tb_mahasiswa.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+ 4 APPPATH\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-07-26 00:41:06 --> mysqli_sql_exception: Unknown column 'tb_mahasiswa.id' in 'where clause' in C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\tugas-web\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\tugas-web\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\tugas-web\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\tugas-web\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\tugas-web\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+#6 C:\xampp\htdocs\tugas-web\app\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+#7 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+#8 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+#9 C:\xampp\htdocs\tugas-web\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\tugas-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\tugas-web\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-07-26 00:41:06 --> Unknown column 'tb_mahasiswa.id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_mahasiswa`
+WHERE `tb_mahasiswa`.`id` = :tb_mahasiswa.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '32602100008')
+ 4 APPPATH\Controllers\Crud.php(48): CodeIgniter\BaseModel->find('32602100008')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100008')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-26 01:44:52 --> Undefined array key "no_handphone"
+in APPPATH\Views\crud\view.php on line 34.
+ 1 APPPATH\Views\crud\view.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "no_handphone"', 'APPPATH\\Views\\crud\\view.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\crud\\view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('crud/view', [], true)
+ 5 APPPATH\Controllers\Crud.php(23): view('crud/view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Crud->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-26 02:18:47 --> Undefined array key "no_handphone"
+in APPPATH\Views\crud\edit.php on line 32.
+ 1 APPPATH\Views\crud\edit.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "no_handphone"', 'APPPATH\\Views\\crud\\edit.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\crud\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('crud/edit', [], true)
+ 5 APPPATH\Controllers\Crud.php(65): view('crud/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Crud->edit('32602100023')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
